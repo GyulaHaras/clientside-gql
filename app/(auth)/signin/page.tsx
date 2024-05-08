@@ -18,7 +18,7 @@ const SigninPage = () => {
     const data = await signin({input: state})
 
     if(data.data.signin){
-      setToken(data.data.signin)
+      setToken(data.data.signin.token)
       router.push('/')
     }
   }
